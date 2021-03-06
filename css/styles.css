@@ -31,7 +31,7 @@
   --clr-white: #fff;
   --ff-primary: 'Lato', sans-serif;
   --transition: all 0.3s linear;
-  --spacing: 0.25rem;
+  --spacing: 0.15rem;
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -48,7 +48,7 @@ body {
   background: var(--clr-white);
   color: var(--clr-grey-1);
   line-height: 1.5;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
 }
 ul {
   list-style-type: none;
@@ -133,3 +133,52 @@ p {
 }
 
 /* === Navbar === */
+
+/* === Hero === */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-primary-3);
+}
+.hero-banner {
+  text-align: center;
+  color: var(--clr-white);
+  padding: 0 3rem;
+}
+.hero-banner h1 {
+  text-transform: uppercase;
+}
+.hero-banner p {
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--clr-white);
+  letter-spacing: var(--spacing);
+}
+.hero-btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  background: var(--clr-white);
+  color: var(--clr-primary-3);
+}
+.hero-btn:hover {
+  background: transparent;
+  color: var(--clr-white);
+  border-color: var(--clr-white);
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(rgba(27, 99, 105, 0.7), rgba(0, 0, 0, 0.7)),
+      url('../images/main.jpeg') center/cover no-repeat;
+  }
+  .hero-banner {
+    padding: 0;
+  }
+  .hero-banner p {
+    max-width: 45rem;
+  }
+}
+
+/* === Hero === */
