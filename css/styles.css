@@ -159,7 +159,7 @@ p {
   width: 100%;
   z-index: 2;
   background: var(--clr-white);
-  box-shadow: var(--dark-shadow) s;
+  box-shadow: var(--dark-shadow);
 }
 .nav-icons {
   display: none;
